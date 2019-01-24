@@ -1,7 +1,19 @@
+/*  Stylesheet for politico. needs improvments
+    by @ekikoh. */
+
 /* Import fonts and icons */
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600|Source+Sans+Pro:300');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Predefined variables */
+:root {
+  --button-bg-color: #eaeaea;
+  --main-text-color: rgb(47, 174, 185);
+}
+
+
 /* Basic resets */
+
 * {
   margin: 0 0px;
   padding: 0 0px;
@@ -9,37 +21,51 @@
 }
 
 a {
-  text-decoration: none;
   color:rgba(0,0,0,.7);
+  text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'IBM Plex Sans', sans-serif;
   color: #4e4e4e;
-}
-
-/* Predefined variables */
-:root {
-  --main-text-color: rgb(47, 174, 185);
-  --button-bg-color: #eaeaea
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* styles for fullscreen landing page */
 .full-screen {
-  min-height: 100vh;
+  height: 100vh;
   background: #F8FAFA;
+  background: url('../images/vote-bg.jpg') no-repeat center right; 
+}
+
+.hero-text-box {
+  padding: 50px;
+}
+
+.hero-text-box h2{
+  font-size: 8em;
+}
+
+.hero-text-box p {
+  width: 55%;
+  font-size: 1.7em;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px;
+  color: #ada7a7;
 }
 
 /*styles for navigation */
 .nav-brand {
-  font-size: 4em;
+  font-size: 2em;
+  margin-left: 45px;
+  color: var(--main-text-color);
 }
 
 nav {
   line-height: 15px;
   padding: 1.2rem 1rem;
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   font-family: 'IBM Plex Sans', sans-serif;
+  border-top: 3px solid var(--main-text-color);
 }
 
 nav,
@@ -55,6 +81,7 @@ nav ul{
 
 nav li {
   margin-left: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 span{
@@ -66,7 +93,7 @@ span{
   font-size: 25px;
   cursor: pointer;
   padding: 8px 30px;
-  border-radius: 2px;
+  border-radius: 0px;
   color: var(--main-text-color);
   border: 1px solid var(--main-text-color);
   background-color: var(--button-bg-color);
@@ -167,9 +194,9 @@ ui-form label {
 }
 
 .close {
-  color: #aaa;
+  color: #fff;
   float: right;
-  font-size: 28px;
+  font-size: 45px;
   font-weight: bold;
 }
 
@@ -233,13 +260,13 @@ ui-form label {
 
 .profile-image > p {
   float: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0,0,0,.7);
   vertical-align: baseline;
   margin-left: 20px;
   margin-top: 10px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: rgba(0,0,0,.7);
 }
 
 .profile-image:after {
