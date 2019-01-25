@@ -59,6 +59,9 @@ h1,h2,h3,h4,h5,h6 {
   margin-left: 45px;
   color: var(--main-text-color);
 }
+.nav-brand-admin {
+  margin-left: 115px;
+}
 
 nav {
   line-height: 15px;
@@ -147,7 +150,7 @@ span{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.ui-form input {
+.ui-form input, select {
   width: 94%;
   padding: 14px;
   background: #fff;
@@ -156,9 +159,13 @@ span{
   border: 1px solid #ddd;
   color: rgba(0, 0, 0, 0.6);
 }
+select {
+  width: 100%;
+}
 
-ui-form label {
-  font-weight: bold;
+.ui-form label {
+  font-weight: 700;
+  color: #413f3f;
 }
 
 /* css for modal box */
@@ -185,6 +192,12 @@ ui-form label {
   animation-name: topAnimate;
   animation-duration: 1s;
   background: hsla(0,0%,100%,.9);
+}
+.modal-content-dashboard {
+  width: 90%; 
+  border:0px;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .form-header {
@@ -277,14 +290,43 @@ ui-form label {
 
 .user-profile-nav ul {
   margin-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
 }
 
 .user-profile-nav li {
+  margin: 0px auto;
   margin-bottom: 20px; 
+  border:1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .user-profile-right h3 {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   color: rgb(153, 153, 153);
+}
+
+table {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer {
+  font:14px 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: #333;
 }
